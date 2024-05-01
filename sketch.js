@@ -37,7 +37,10 @@ function mousePressed() { // needed to get it to work in full screen mode
         userStartAudio();
         audioStarted = true;
     }
+checkWhiteKeys();
+  checkBlackKeys();
 }
+
 
 
 function setup() {
@@ -230,10 +233,8 @@ createCanvas(windowWidth, windowHeight, WEBGL);
 
 }
 
-function mousePressed() {
-  checkWhiteKeys();
-  checkBlackKeys();
-}
+
+ 
 
 function checkWhiteKeys() {
   let mouseXAdjusted = mouseX - width / 2;
